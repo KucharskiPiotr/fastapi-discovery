@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      tags:
+        - python-fastapi-test-web
+      context: .
+    volumes:
+      - ./app:/code/app
+    ports:
+      - '8080:80'
