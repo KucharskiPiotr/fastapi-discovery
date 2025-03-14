@@ -26,7 +26,7 @@ def read_root():
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None) -> ReadItemResponse:
-    return { "item_id": item_id, "q": q }
+    return { 'item_id': item_id, 'q': q }
 
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item) -> UpdateItemResponse:
