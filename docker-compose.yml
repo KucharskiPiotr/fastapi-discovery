@@ -5,6 +5,8 @@ services:
         - python-fastapi-test-web
       context: .
     volumes:
-      - ./app:/code/app
+      - .:/code
+    environment:
+      - SECRET_KEY
     ports:
       - '8080:80'

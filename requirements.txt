@@ -2,3 +2,5 @@ fastapi[standard]==0.115.11
 pydantic==2.10.6
 httpx
 pytest
+pyjwt
+passlib[bcrypt]
