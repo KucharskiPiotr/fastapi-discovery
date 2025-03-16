@@ -174,7 +174,7 @@ async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm,
 
 
 @app.get("/users/me")
-async def read_users_me(current_user: Annotated[User, Depends(get_current_active_user)]):
+async def read_users_me(current_user: Annotated[User, Depends(get_current_active_user)]) -> User:
     return current_user
 
 
